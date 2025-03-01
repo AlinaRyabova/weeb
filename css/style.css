@@ -1,0 +1,94 @@
+@import url(/css/reset.css);
+@import url(/css/components.css);
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: #0f172a;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+} /* 100vh - 100% висоти вікна браузера */
+
+.wrapper > main {
+  flex-grow: 1;
+  overflow: clip;
+}
+
+/* Обмежуючий контейнер */
+[class*="__container"] {
+  max-inline-size: 1310px; /* = 1280 + 15 + 15 */
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.header {
+  padding-block: 24px;
+}
+.header__container {
+}
+.header-body {
+  padding: 24px;
+  column-gap: 38px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.header__link-logo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 110%;
+}
+.header__link-logo:hover {
+  color: #aa51fe;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.menu__item {
+}
+.menu__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+.menu__link:hover {
+  color: #aa51fe;
+}
+.header__actions {
+}
+.actions-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.actions-header__button {
+}
+.button {
+}
+.button--mini {
+}
+.button--transparent {
+}
+.button--white-border {
+}
