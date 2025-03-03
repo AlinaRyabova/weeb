@@ -4,21 +4,21 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #fff;
   background-color: #0f172a;
+  color: #fff;
 }
 @media (max-width: 767.98px) {
   body {
     font-size: 16px;
   }
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow: clip;
   min-block-size: 100%;
+  overflow: clip;
 }
-
 .wrapper > main {
   flex-grow: 1;
 }
@@ -29,7 +29,7 @@ body {
   margin-inline: auto;
   padding-inline: 15px;
 }
-/* ====================================================================== */
+/* ======================================================================================================================================================== */
 .header {
   padding-block: 24px;
   position: sticky;
@@ -39,7 +39,7 @@ body {
 .header__container {
   max-inline-size: 1030px;
 }
-.header-body {
+.header__body {
   padding: 24px;
   column-gap: 46px;
   row-gap: 5px;
@@ -47,9 +47,10 @@ body {
   background-color: #192131;
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
     0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+
   display: grid;
-  grid-template-columns: auto 1fr auto;
   align-items: center;
+  grid-template-columns: auto 1fr auto;
 }
 .header__link-logo {
   position: relative;
@@ -77,7 +78,7 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.5px;
   transition: color 0.3s;
 }
@@ -123,8 +124,10 @@ body {
     block-size: 100%;
     inline-size: 100%;
 
-    transition: insert-inline-start 0.3s;
+    transition: inset-inline-start 0.3s;
+
     overflow: auto;
+
     background-color: #0f172a;
 
     padding-block-start: 105px;
@@ -148,12 +151,14 @@ body {
     box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
       0px 0px 15px 0px rgba(0, 0, 0, 0.07);
   }
+
   .open-menu .menu {
     inset-inline-start: 0;
   }
   .open-menu .menu::before {
     visibility: visible;
   }
+
   .menu__list {
     flex-direction: column;
     align-items: flex-end;
@@ -163,6 +168,7 @@ body {
   .menu__link {
     font-size: 30px;
   }
+
   .icon-menu {
     display: block;
     position: relative;
@@ -173,11 +179,12 @@ body {
   .icon-menu span,
   .icon-menu::before,
   .icon-menu::after {
-    position: absolute;
     content: "";
+    position: absolute;
     block-size: 4px;
-    background-color: #fff;
     border-radius: 4px;
+    background-color: #fff;
+
     transition: all 0.3s;
   }
   .icon-menu::before,
@@ -185,19 +192,20 @@ body {
     inline-size: 15px;
   }
   .icon-menu::before {
-    inset-block-start: 14px;
     inset-inline-start: 10px;
+    inset-block-start: 14px;
   }
   .icon-menu::after {
     inset-inline-end: 10px;
     inset-block-end: 14px;
   }
   .icon-menu span {
-    inset-block-start: 50%;
     inset-inline-start: 50%;
+    inset-block-start: 50%;
     transform: translate(-50%, -50%);
     inline-size: 28px;
   }
+
   .open-menu .icon-menu span {
     transform: translate(-50%, -50%) rotate(-45deg);
     inline-size: 33px;
@@ -206,8 +214,9 @@ body {
     transform: translate(0px, 1px) rotate(45deg);
   }
   .open-menu .icon-menu::after {
-    transform: translate(0px, -2px) rotate(45deg);
+    transform: translate(0, -2px) rotate(45deg);
   }
+
   .header__body {
     padding-block: 8px;
     padding-inline-start: 24px;
@@ -216,7 +225,7 @@ body {
     justify-content: space-between;
   }
 }
-@media (max-width: 439.98) {
+@media (max-width: 439.98px) {
   .menu__list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -230,26 +239,25 @@ body {
     display: none;
   }
 }
-/* ====================================================================== */
+/* ======================================================================================================================================================== */
+
 [class*="page__"] {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-@media (max-width: 991.98) {
+@media (max-width: 991.98px) {
   [class*="page__"] {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media (max-width: 767.98) {
+@media (max-width: 767.98px) {
   [class*="page__"] {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
-
-.page__hero {
-}
+/* ======================================================================================================================================================== */
 .hero {
   padding-top: 104px;
 }
@@ -259,15 +267,13 @@ body {
 .hero__block-header {
   margin-bottom: 80px;
 }
-
 .hero__image {
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
     0px 0px 15px 0px rgba(0, 0, 0, 0.07);
 }
-
-@media (max-width: 991.98) {
+@media (max-width: 991.98px) {
   .hero {
     padding-top: 70px;
   }
@@ -275,7 +281,7 @@ body {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 767.98) {
+@media (max-width: 767.98px) {
   .hero {
     padding-top: 35px;
   }
@@ -283,3 +289,61 @@ body {
     margin-bottom: 48px;
   }
 }
+/* ============================================================= */
+
+.companies__title {
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all 0.1s;
+}
+.companies__title:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.companies__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.companies__item {
+  opacity: 0;
+  transition: all 0.1s;
+  transform: scale(0);
+}
+@media (max-width: 991.98px) {
+  .companies__title:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.98) {
+  .companies__title:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+.--animate .companies__title {
+  transition: all 0.5s;
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.--animate .companies__item {
+  transition: all 0.5s;
+  opacity: 1;
+  transform: scale(1);
+}
+.--animate .companies__item:nth-child(1) {
+  transition-delay: 0;
+}
+.--animate .companies__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.--animate .companies__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.--animate .companies__item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.--animate .companies__item:nth-child(5) {
+  transition-delay: 0.4s;
+}
+/* ======================================================= */
