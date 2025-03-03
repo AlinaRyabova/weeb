@@ -27,9 +27,7 @@
 .button--transparent {
   background-color: transparent;
 }
-.button--transparent:hover {
-  background-color: #9333ea;
-}
+
 .button--white-border {
   border: 2px solid #fff;
   background-color: transparent;
@@ -37,5 +35,4 @@
 }
 .button--white-border:hover {
   border: 2px solid #6b24ae;
-  background-color: #9333ea;
 }
